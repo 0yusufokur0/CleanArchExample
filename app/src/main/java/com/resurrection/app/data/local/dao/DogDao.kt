@@ -1,4 +1,4 @@
-package com.resurrection.app.data.local
+package com.resurrection.app.data.local.dao
 
 import androidx.room.Dao
 import androidx.room.Insert

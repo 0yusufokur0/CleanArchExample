@@ -1,8 +1,8 @@
-package com.resurrection.app.data.repository
+package com.resurrection.app.data.local.repo
 
-import com.resurrection.app.data.local.DogDao
+import com.resurrection.app.data.local.dao.DogDao
 import com.resurrection.app.data.local.entity.LastDogEntity
-import com.resurrection.app.data.local.toDogResponseModel
+import com.resurrection.app.data.local.mapper.toDogResponseModel
 import com.resurrection.app.data.model.DogResponseModel
 import com.resurrection.app.util.resourcefulFlowOf
  import com.resurrection.base.utils.Resource

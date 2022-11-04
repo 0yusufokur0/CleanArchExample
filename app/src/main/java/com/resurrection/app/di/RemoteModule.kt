@@ -1,6 +1,6 @@
 package com.resurrection.app.di
 
-import com.resurrection.app.data.remote.DogApiService
+import com.resurrection.app.data.remote.service.DogApiService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

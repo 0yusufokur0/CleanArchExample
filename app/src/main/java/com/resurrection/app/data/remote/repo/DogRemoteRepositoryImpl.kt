@@ -1,8 +1,7 @@
-package com.resurrection.app.data.repository
+package com.resurrection.app.data.remote.repo
 
-import com.resurrection.app.data.remote.DogApiService
+import com.resurrection.app.data.remote.service.DogApiService
 import com.resurrection.app.util.resourcefulFlowOf
-import retrofit2.Response
 import javax.inject.Inject
 
 class DogRemoteRepositoryImpl @Inject constructor(

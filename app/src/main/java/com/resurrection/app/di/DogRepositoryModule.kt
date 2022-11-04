@@ -1,9 +1,9 @@
 package com.resurrection.app.di
 
-import com.resurrection.app.data.repository.DogLocalRepository
-import com.resurrection.app.data.repository.DogLocalRepositoryImpl
-import com.resurrection.app.data.repository.DogRemoteRepository
-import com.resurrection.app.data.repository.DogRemoteRepositoryImpl
+import com.resurrection.app.data.local.repo.DogLocalRepository
+import com.resurrection.app.data.local.repo.DogLocalRepositoryImpl
+import com.resurrection.app.data.remote.repo.DogRemoteRepository
+import com.resurrection.app.data.remote.repo.DogRemoteRepositoryImpl
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
@@ -16,11 +16,11 @@ abstract class DogRepositoryModule {
 
     @Binds
     @Singleton
-    abstract fun bindRemoteRepository(dogRemoteRepositoryImpl: DogRemoteRepositoryImpl):DogRemoteRepository
+    abstract fun bindRemoteRepository(dogRemoteRepositoryImpl: DogRemoteRepositoryImpl): DogRemoteRepository
 
     @Binds
     @Singleton
-    abstract fun bindLocalRepository(dogLocalRepositoryImpl: DogLocalRepositoryImpl):DogLocalRepository
+    abstract fun bindLocalRepository(dogLocalRepositoryImpl: DogLocalRepositoryImpl): DogLocalRepository
 }
 
 

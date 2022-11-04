@@ -1,8 +1,8 @@
 package com.resurrection.app.domain
 
 import com.resurrection.app.data.model.DogResponseModel
-import com.resurrection.app.data.repository.DogLocalRepository
-import com.resurrection.app.data.repository.DogRemoteRepository
+import com.resurrection.app.data.local.repo.DogLocalRepository
+import com.resurrection.app.data.remote.repo.DogRemoteRepository
 import com.resurrection.base.components.network.NetworkManager
 import com.resurrection.base.utils.Resource
 import kotlinx.coroutines.flow.*
