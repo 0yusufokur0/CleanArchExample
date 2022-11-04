@@ -13,16 +13,10 @@ class GetDogUseCase @Inject constructor(
     private val dogLocalRepository: DogLocalRepository,
     private val dogRemoteRepository: DogRemoteRepository,
 ) {
-    suspend operator fun invoke(): Flow<Resource<DogResponseModel>> {
+    suspend operator fun invoke(): Flow<Resource<DogResponseModel>> =
         if (!networkManager.checkNetworkAvailable()) {
-            val data : Flow<Resource<DogResponseModel>>
-            return dogLocalRepository.getDog()
+            dogLocalRepository.getDog()
         } else{
-            return dogRemoteRepository.getDog()/*.transform {
-                if (it.data?.status != "success") {
-                    it.data?.message = "https://images.dog.ceo/breeds/bulldog-french/n02108915_5667.jpg"
-                }
-            }*/
+            dogRemoteRepository.getDog()
         }
-    }
 }
