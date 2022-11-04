@@ -12,7 +12,9 @@ import dagger.hilt.android.AndroidEntryPoint
 class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>(
     R.layout.activity_main, MainViewModel::class.java
 ) {
+
     private var lastShowedDogImageUrl = ""
+
     override fun init(savedInstanceState: Bundle?) {
 
         viewModel.getDog()
@@ -23,7 +25,7 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>(
                 binding.textView.visibility = View.GONE
                 binding.imageView.loadAny(it?.message)
                 lastShowedDogImageUrl = it?.message.toString()
-            }, error ={
+            }, error = {
                 binding.imageView.visibility = View.GONE
                 binding.textView.visibility = View.VISIBLE
                 binding.textView.text = "Error"

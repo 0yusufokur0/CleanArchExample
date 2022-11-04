@@ -1,7 +1,7 @@
-package com.resurrection.app.data.local.repo
+package com.resurrection.app.domain.repo
 
-import com.resurrection.app.data.local.entity.LastDogEntity
-import com.resurrection.app.data.model.DogResponseModel
+import com.resurrection.app.data.model.dog.entity.LastDogEntity
+import com.resurrection.app.data.model.dog.DogResponseModel
 import com.resurrection.base.utils.Resource
 import kotlinx.coroutines.flow.Flow
 

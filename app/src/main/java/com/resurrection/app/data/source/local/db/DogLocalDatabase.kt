@@ -1,9 +1,9 @@
-package com.resurrection.app.data.local.db
+package com.resurrection.app.data.source.local.db
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
-import com.resurrection.app.data.local.dao.DogDao
-import com.resurrection.app.data.local.entity.LastDogEntity
+import com.resurrection.app.data.source.local.dao.DogDao
+import com.resurrection.app.data.model.dog.entity.LastDogEntity
 
 @Database(
     entities = [LastDogEntity::class],

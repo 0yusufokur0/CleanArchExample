@@ -2,8 +2,8 @@ package com.resurrection.app.di
 
 import android.content.Context
 import androidx.room.Room
-import com.resurrection.app.data.local.dao.DogDao
-import com.resurrection.app.data.local.db.DogLocalDatabase
+import com.resurrection.app.data.source.local.dao.DogDao
+import com.resurrection.app.data.source.local.db.DogLocalDatabase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

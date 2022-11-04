@@ -1,6 +1,6 @@
 package com.resurrection.app.util
 
-import com.resurrection.app.data.local.entity.LastDogEntity
+import com.resurrection.app.data.model.dog.entity.LastDogEntity
 import com.resurrection.base.utils.Resource
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.flow
@@ -14,4 +14,4 @@ fun <T> resourcefulFlowOf(request: suspend () -> T) = flow {
         Resource.Error(e)
     }
     emit(response)
-}.flowOn(Dispatchers.IO)
+}

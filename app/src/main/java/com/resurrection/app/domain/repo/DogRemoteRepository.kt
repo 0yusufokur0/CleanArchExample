@@ -1,6 +1,6 @@
-package com.resurrection.app.data.remote.repo
+package com.resurrection.app.domain.repo
 
-import com.resurrection.app.data.model.DogResponseModel
+import com.resurrection.app.data.model.dog.DogResponseModel
 import com.resurrection.base.utils.Resource
 import kotlinx.coroutines.flow.Flow
 

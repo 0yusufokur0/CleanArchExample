@@ -1,9 +1,9 @@
 package com.resurrection.app.di
 
-import com.resurrection.app.data.local.repo.DogLocalRepository
-import com.resurrection.app.data.local.repo.DogLocalRepositoryImpl
-import com.resurrection.app.data.remote.repo.DogRemoteRepository
-import com.resurrection.app.data.remote.repo.DogRemoteRepositoryImpl
+import com.resurrection.app.domain.repo.DogLocalRepository
+import com.resurrection.app.data.repo.DogLocalRepositoryImpl
+import com.resurrection.app.domain.repo.DogRemoteRepository
+import com.resurrection.app.data.repo.DogRemoteRepositoryImpl
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

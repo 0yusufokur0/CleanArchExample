@@ -1,4 +1,4 @@
-package com.resurrection.app.data.local.entity
+package com.resurrection.app.data.model.dog.entity
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

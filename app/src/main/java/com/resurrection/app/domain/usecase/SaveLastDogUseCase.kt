@@ -1,7 +1,7 @@
-package com.resurrection.app.domain
+package com.resurrection.app.domain.usecase
 
-import com.resurrection.app.data.local.entity.LastDogEntity
-import com.resurrection.app.data.local.repo.DogLocalRepository
+import com.resurrection.app.data.model.dog.entity.LastDogEntity
+import com.resurrection.app.domain.repo.DogLocalRepository
 import javax.inject.Inject
 
 class SaveLastDogUseCase @Inject constructor(

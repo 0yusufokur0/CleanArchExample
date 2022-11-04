@@ -1,9 +1,11 @@
 package com.resurrection.app.ui.main
 
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
-import com.resurrection.app.data.model.DogResponseModel
-import com.resurrection.app.domain.GetDogUseCase
-import com.resurrection.app.domain.SaveLastDogUseCase
+import com.resurrection.app.data.model.dog.DogResponseModel
+import com.resurrection.app.domain.usecase.GetDogUseCase
+import com.resurrection.app.domain.usecase.SaveLastDogUseCase
 import com.resurrection.base.core.viewmodel.BaseViewModel
 import com.resurrection.base.utils.Resource
 import dagger.hilt.android.lifecycle.HiltViewModel

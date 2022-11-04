@@ -1,4 +1,4 @@
-package com.resurrection.app.data.model
+package com.resurrection.app.data.model.dog
 
 import com.google.gson.annotations.SerializedName
 
